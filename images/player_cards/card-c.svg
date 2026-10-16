@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2E20"/>
+      <stop offset="100%" stop-color="#2D4A33"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="16" fill="url(#grad-c)"/>
+  <rect x="15" y="15" width="370" height="470" rx="12" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,6"/>
+  <circle cx="200" cy="180" r="70" fill="#E88A45" opacity="0.9"/>
+  <text x="200" y="195" font-family="'Cinzel', Georgia, serif" font-size="44" font-weight="bold" fill="#FDFBF7" text-anchor="middle">CARD C</text>
+  <text x="200" y="300" font-family="'Cinzel', Georgia, serif" font-size="22" font-weight="bold" fill="#FDFBF7" text-anchor="middle">Autumn Hxze</text>
+  <text x="200" y="335" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#D4AF37" text-anchor="middle" letter-spacing="2">AUTUMNHXZEPHOTO</text>
+  <rect x="80" y="380" width="240" height="40" rx="20" fill="#FDFBF7" opacity="0.15"/>
+  <text x="200" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#FDFBF7" text-anchor="middle">GORGEOUS GROWTH NETWORK</text>
+</svg>

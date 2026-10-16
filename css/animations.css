@@ -1,0 +1,244 @@
+/* Built by Raptor. */
+/* Animations CSS */
+
+/* Base animations */
+[data-anim="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s var(--anim-ease-premium),
+              transform 0.6s var(--anim-ease-premium);
+  will-change: opacity, transform;
+}
+[data-anim="fade-up"].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-anim="fade-in"] {
+  opacity: 0;
+  transition: opacity 0.6s var(--anim-ease-premium);
+  will-change: opacity;
+}
+[data-anim="fade-in"].is-visible {
+  opacity: 1;
+}
+
+/* Additive variants */
+[data-anim="fade-left"] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s var(--anim-ease-premium),
+              transform 0.6s var(--anim-ease-premium);
+  will-change: opacity, transform;
+}
+[data-anim="fade-left"].is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-anim="fade-right"] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s var(--anim-ease-premium),
+              transform 0.6s var(--anim-ease-premium);
+  will-change: opacity, transform;
+}
+[data-anim="fade-right"].is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-anim="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.6s var(--anim-ease-premium),
+              transform 0.6s var(--anim-ease-premium);
+  will-change: opacity, transform;
+}
+[data-anim="zoom-in"].is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger animation system */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.5s var(--anim-ease-premium),
+              transform 0.5s var(--anim-ease-premium);
+  transition-delay: var(--anim-delay, 0ms);
+  will-change: opacity, transform;
+}
+.stagger-item.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Instant mouse hover response - never delayed */
+.stagger-item.is-visible:hover,
+.stagger-item:hover,
+.branch-card:hover,
+.canva-box-card:hover,
+.showcase-card:hover,
+.btn-primary-offset:hover,
+.btn-premium-offset:hover,
+.btn-primary-small:hover,
+.btn-premium-small:hover,
+.nav-link:hover,
+a:hover {
+  transition-delay: 0s !important;
+  transition-duration: 0.18s !important;
+}
+
+/* Cinematic large headings reveal */
+[data-anim="reveal-mask"] {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(30px);
+  transition: clip-path 0.8s var(--anim-ease-premium),
+              transform 0.8s var(--anim-ease-premium);
+  will-change: clip-path, transform;
+}
+[data-anim="reveal-mask"].is-visible {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: translateY(0);
+}
+
+/* Rotate and scale slightly */
+[data-anim="rotate-scale"] {
+  opacity: 0;
+  transform: scale(0.96) rotate(-2deg);
+  transition: opacity 0.6s var(--anim-ease-premium),
+              transform 0.6s var(--anim-ease-premium);
+  will-change: opacity, transform;
+}
+[data-anim="rotate-scale"].is-visible {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-anim],
+  .stagger-item {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Link underline animation */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.2s var(--anim-ease-premium);
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Loading overlay screen */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-forest);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s var(--anim-ease-premium), visibility 0.4s var(--anim-ease-premium);
+}
+.loader-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loader-logo {
+  animation: logo-pulse 1.2s infinite alternate var(--anim-ease-premium);
+}
+@keyframes logo-pulse {
+  from { opacity: 0.5; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1.02); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loader-logo { animation: none; opacity: 1; }
+}
+
+/* ============================================================
+   Authentic Canva Signature Keyframes & Utilities
+   Directly ported from gorgeousgrowth.org Canva runtime
+   ============================================================ */
+
+/* 1. Continuous 360deg Rotation (Canva eT6GTQ / x1wc8ddo-B) - for stamps & emblems */
+@keyframes canva-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.canva-spin {
+  animation: canva-spin 22s linear infinite;
+  transform-origin: center center;
+}
+
+.canva-spin-fast {
+  animation: canva-spin 10s linear infinite;
+  transform-origin: center center;
+}
+
+/* 2. Scale Reveal Pop (Canva xnd5740-B) */
+@keyframes canva-scale-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.canva-scale-pop {
+  animation: canva-scale-pop 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 3. Breathing Scale Pulse (Canva xrimgva-B) */
+@keyframes canva-pulse-breathe {
+  0%   { transform: scale(0.92); }
+  20%  { transform: scale(0.92); }
+  35%  { transform: scale(1); }
+  80%  { transform: scale(1); }
+  100% { transform: scale(0.92); }
+}
+
+.canva-pulse-breathe {
+  animation: canva-pulse-breathe 4.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+/* 4. Shimmer Sweep (Canva x1g0pm36-B / xhu7vme-B) */
+@keyframes canva-shimmer {
+  0% { background-position: 100% 0; }
+  75%, 100% { background-position: 0 0; }
+}
+
+.canva-shimmer {
+  background-size: 200% 100%;
+  animation: canva-shimmer 3s ease-in-out infinite;
+}
+
+/* 5. Subtle Ambient Float */
+@keyframes canva-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.canva-float {
+  animation: canva-float 5s ease-in-out infinite;
+}

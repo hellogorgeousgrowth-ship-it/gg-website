@@ -1,0 +1,206 @@
+/* Built by Raptor. */
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+  .site-header {
+    padding: 0.5rem 0;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(15, 27, 3, 0.98);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    gap: 1.2rem;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-bottom: 2px solid var(--color-gold);
+  }
+  
+  .nav-links.open {
+    display: flex;
+  }
+  
+  .nav-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--color-cream);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .split-feature-section,
+  .about-split-block,
+  .about-split-block.reverse,
+  .founder-grid,
+  .stay-connected-split-section,
+  .internship-grid,
+  .canva-team-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .knowledge-ribbon-grid,
+  .alacarte-grid,
+  .footer-grid,
+  .toolkits-three-cards,
+  .toolkits-individual-grid,
+  .reports-3grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .member-directory-grid-interactive {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .stories-5grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .team-member-row {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .team-photo-wrap {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .split-feature-content,
+  .split-feature-content.right-align {
+    padding: 3rem 1.5rem !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .split-feature-desc {
+    margin: 0 auto 1.5rem auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .knowledge-ribbon-grid,
+  .alacarte-grid,
+  .footer-grid,
+  .toolkits-three-cards,
+  .contact-checkbox-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .perk-item-card {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .perk-number-badge {
+    margin-bottom: -0.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .title-3d-giant,
+  .title-3d-rust {
+    font-size: 2.8rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .gorgie-script {
+    font-size: 3.2rem !important;
+  }
+
+  .discovery-call-rule-wrapper {
+    flex-direction: column;
+  }
+
+  .discovery-call-rule {
+    display: none;
+  }
+
+  .method-pillars-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .growing-now-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .instagram-grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .split-showcase-grid,
+  .showcase-card,
+  .showcase-card.reverse,
+  .founder-editorial-grid,
+  .team-editorial-card,
+  .story-subsections-grid,
+  .activations-two-grid,
+  .internship-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .split-showcase-text.right-align,
+  .showcase-card-text.align-right {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .title-underline-bar.align-right,
+  .showcase-title-line.align-right,
+  .showcase-bottom-line.align-right {
+    margin-left: 0 !important;
+  }
+
+  .testimonials-canva-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .method-pillars-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .growing-now-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .instagram-grid-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .split-showcase-grid,
+  .showcase-card,
+  .showcase-card.reverse,
+  .founder-editorial-grid,
+  .team-editorial-card,
+  .story-subsections-grid,
+  .activations-two-grid,
+  .internship-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .testimonials-canva-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+

@@ -1,0 +1,36 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary & Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules (if any tooling added later)
+node_modules/
+scratch/
+
+# AI Agents & Secret Configs
+AGENTS.md
+.agents/
+.env
+.env.*
+*.token
+*.pat
+token.txt
+GITHUB_TOKEN.txt
+GITHUB_PAT.txt
+*.secret
+*.key

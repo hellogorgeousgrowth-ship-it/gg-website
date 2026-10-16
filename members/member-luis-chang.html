@@ -1,0 +1,458 @@
+<!-- Built by Raptor. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work with Luis Chang | Gorgeous Growth Network</title>
+  <meta name="description" content="Collaborate and match with Luis Chang (Luis' Funnel Design) through the Gorgeous Growth vetted community network." />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    .member-spotlight-box {
+      background: var(--color-forest);
+      color: #FFF7EC !important;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      border: 2px solid var(--color-gold);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+      font-family: var(--font-lora), 'Lora', serif;
+    }
+    .member-spotlight-box h2 {
+      color: #FFF7EC !important;
+      font-family: var(--font-roller-coaster), 'Roller Coaster', 'Roller Coaster Serif', serif !important;
+    }
+    .member-spotlight-box span {
+      font-family: var(--font-sheriff), 'Sheriff', serif !important;
+    }
+    .member-spotlight-box p:first-of-type {
+      color: var(--color-burnt-orange) !important;
+      font-family: var(--font-sheriff), 'Sheriff', serif !important;
+    }
+    .member-spotlight-box p {
+      color: #FFF7EC !important;
+      font-family: var(--font-lora), 'Lora', serif !important;
+    }
+    .match-instruction-card h3 {
+      font-family: var(--font-roller-coaster), 'Roller Coaster', 'Roller Coaster Serif', serif !important;
+    }
+    .match-step-num,
+    .match-step-item strong {
+      font-family: var(--font-sheriff), 'Sheriff', serif !important;
+    }
+    .match-step-item {
+      font-family: var(--font-lora), 'Lora', serif !important;
+    }
+    .member-spotlight-img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid var(--color-gold);
+      background: #1B2E20;
+    }
+    .member-tag-pill {
+      font-family: var(--font-sheriff), 'Sheriff', serif !important;
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.2);
+      border: 1px solid var(--color-gold);
+      color: #FFF7EC !important;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .match-instruction-card {
+      background: var(--color-cream-soft);
+      border-left: 4px solid var(--color-burnt-orange);
+      padding: 1.5rem 1.8rem;
+      border-radius: 6px;
+      margin-bottom: 2.5rem;
+      color: var(--color-forest);
+    }
+    .match-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+    }
+    .match-step-item {
+      background: #FFFFFF;
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid rgba(0,0,0,0.08);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .match-step-num {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 50%;
+      background: var(--color-burnt-orange);
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-right: 0.3rem;
+    }
+    .app-form-box {
+      background: #FFF7EC !important;
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      border: 2px solid var(--color-gold);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    }
+    .app-form-label {
+      color: #0F1B03 !important;
+    }
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.8rem;
+      margin-top: 0.6rem;
+    }
+    .checkbox-label-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+      color: #0F1B03 !important;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .checkbox-label-item span {
+      color: #0F1B03 !important;
+      font-weight: 600;
+      font-family: var(--font-sheriff), var(--font-lora), var(--font-sans) !important;
+    }
+    .checkbox-label-item input[type="checkbox"],
+    .checkbox-label-item input[type="radio"] {
+      accent-color: var(--color-burnt-orange);
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+    @media (max-width: 820px) {
+      .member-spotlight-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .member-spotlight-img {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Minimal Standalone Spotlight Top Bar -->
+  <header class="spotlight-nav-header">
+    <div class="spotlight-nav-container">
+      <a href="../network.html" class="spotlight-back-action" aria-label="Return to Network">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Back to Network</span>
+      </a>
+
+      <div class="spotlight-nav-center">
+        <span class="spotlight-logo-text"><strong style="color: var(--color-gold);">Gorgeous</strong> Growth</span>
+        <span class="spotlight-badge-pill">Member Spotlight</span>
+      </div>
+
+      <a href="../network.html" class="spotlight-close-action" aria-label="Close Spotlight">
+        <i class="fa-solid fa-xmark"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero Banner with Monogram -->
+  <section style="background-color: var(--color-cream-soft); padding: 4rem 1.5rem 2rem; text-align: center;">
+    <div class="container" data-anim="zoom-in">
+      <div style="display: inline-block;">
+        <img src="../images/logo.png" alt="GG Monogram Logo" class="banner-monogram" width="140" height="140" />
+      </div>
+
+      <span style="font-family: var(--font-sans); font-size: 0.85rem; font-weight: 800; color: var(--color-burnt-orange); letter-spacing: 2px; text-transform: uppercase; display: block; margin-top: 1rem;">
+        COMMUNITY COLLABORATION
+      </span>
+
+      <h1 class="title-3d-giant" style="font-size: clamp(2.8rem, 6.5vw, 5.2rem); letter-spacing: 2px; color: var(--color-forest); margin-top: 0.5rem;">
+        WORK WITH OUR NETWORK
+      </h1>
+
+      <p style="font-family: var(--font-serif); font-size: clamp(1.05rem, 2.2vw, 1.4rem); font-weight: 700; color: var(--color-burnt-orange); letter-spacing: 1.5px; text-transform: uppercase; max-width: 850px; margin: 0.8rem auto;">
+        GROW GORGEOUSLY BY WORKING WITH A GORGEOUS GROWTH COMMUNITY MEMBER
+      </p>
+
+      <p style="font-family: var(--font-body); font-size: 1.05rem; color: var(--color-forest); max-width: 780px; margin: 1rem auto; line-height: 1.7;">
+        Our vetted network is rooted in ethical business practices and brought to life through specialists and creatives that scale with intention.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 2: Member Spotlight & Matchmaking Form -->
+  <section style="background-color: var(--color-forest); padding: 4.5rem 1.5rem;" id="matchmaking-portal" data-anim="fade-up">
+    <div class="container" style="max-width: 960px;">
+      
+      <!-- Member Spotlight Card -->
+      <div class="member-spotlight-box">
+        <div>
+          <a href="../network.html" title="Return to Gorgeous Growth Network Directory">
+            <img src="../images/network/35e699b13c916b3c6eb280e224935ea0.png" alt="Luis Chang" class="member-spotlight-img" />
+          </a>
+        </div>
+        <div>
+          <span style="font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; color: var(--color-gold); letter-spacing: 2px; text-transform: uppercase; display: block;">
+            COMMUNITY PROFILE
+          </span>
+          <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #FFF7EC; margin: 0.4rem 0 0.2rem;">
+            Luis Chang
+          </h2>
+          <p style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--color-burnt-orange); letter-spacing: 1px; margin-bottom: 1.2rem;">
+            Luis' Funnel Design
+          </p>
+          <p style="font-family: var(--font-body); font-size: 1rem; color: #FFF7EC; opacity: 0.95; line-height: 1.7; margin-bottom: 1.5rem;">
+            Conversion rate optimization and sales funnel architect building seamless customer journeys that maximize digital ROI.
+          </p>
+          <div>
+              <span class='member-tag-pill'>Funnel Design</span>
+              <span class='member-tag-pill'>CRO</span>
+              <span class='member-tag-pill'>Landing Page UX</span>
+              <span class='member-tag-pill'>Lead Generation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- How it Works Card -->
+      <div class="match-instruction-card">
+        <h3 style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; color: var(--color-forest); margin-bottom: 0.5rem;">
+          How It Works:
+        </h3>
+        <div class="match-steps-grid">
+          <div class="match-step-item">
+            <span class="match-step-num">1</span> <strong>Desired Partner:</strong> Target collaborator pre-selected below (Luis Chang).
+          </div>
+          <div class="match-step-item">
+            <span class="match-step-num">2</span> <strong>Project Details:</strong> Add timeline, scheduling, and proposed budget.
+          </div>
+          <div class="match-step-item">
+            <span class="match-step-num">3</span> <strong>Contact Info:</strong> Share your contact and preferred communication mode.
+          </div>
+          <div class="match-step-item">
+            <span class="match-step-num">4</span> <strong>Direct Introduction:</strong> Our team coordinates the introduction &amp; contract management.
+          </div>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">
+          Questions? Email us anytime: <a href="mailto:Hello@GorgeousGrowth.Org" style="color: var(--color-burnt-orange); font-weight: 700; text-decoration: underline;">Hello@GorgeousGrowth.Org</a>
+        </p>
+      </div>
+
+      <!-- Main Matchmaking Form -->
+      <div class="app-form-box">
+        
+        <div id="match-status-message" style="display: none; padding: 1.5rem; border-radius: 4px; margin-bottom: 2rem; text-align: center; font-weight: 700;"></div>
+
+        <form id="member-match-form">
+          <!-- Hidden Target Member Data -->
+          <input type="hidden" name="target_member" value="Luis Chang" />
+          <input type="hidden" name="target_member_role" value="Luis' Funnel Design" />
+
+          <!-- Form Header Note -->
+          <div style="background: #FFFFFF; border: 1.5px solid var(--color-forest); border-left: 5px solid var(--color-burnt-orange); border-radius: 4px; padding: 1.1rem 1.4rem; margin-bottom: 2rem;">
+            <p style="font-size: 0.95rem; color: #0F1B03; font-weight: 600; margin: 0; line-height: 1.5;">
+              🤝 <strong style="color: var(--color-burnt-orange);">Collaborator Request:</strong> You are submitting a collaboration and match request for <strong style="color: #0F1B03;">Luis Chang</strong> (Luis' Funnel Design).
+            </p>
+          </div>
+
+          <!-- Section A: Contact Details -->
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-forest); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1.2rem; border-bottom: 2px solid var(--color-burnt-orange); padding-bottom: 0.4rem;">
+            1. Your Contact &amp; Brand Details
+          </h4>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="app-form-group">
+              <label class="app-form-label">Your Full Name*</label>
+              <input type="text" name="requester_name" required class="app-form-input" placeholder="Your Name" />
+            </div>
+
+            <div class="app-form-group">
+              <label class="app-form-label">Email Address*</label>
+              <input type="email" name="requester_email" required class="app-form-input" placeholder="you@company.com" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="app-form-group">
+              <label class="app-form-label">Phone Number*</label>
+              <input type="tel" name="requester_phone" required class="app-form-input" placeholder="(555) 123-4567" />
+            </div>
+
+            <div class="app-form-group">
+              <label class="app-form-label">Brand / Business / Organization Name*</label>
+              <input type="text" name="requester_company" required class="app-form-input" placeholder="Your Brand LLC" />
+            </div>
+          </div>
+
+          <div class="app-form-group">
+            <label class="app-form-label">Website or Instagram URL*</label>
+            <input type="url" name="requester_website" required class="app-form-input" placeholder="https://instagram.com/yourhandle" />
+          </div>
+
+          <!-- Section B: Project Scope -->
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-forest); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 2rem 0 1.2rem; border-bottom: 2px solid var(--color-burnt-orange); padding-bottom: 0.4rem;">
+            2. Collaboration Scope &amp; Target Services
+          </h4>
+
+          <div class="app-form-group">
+            <label class="app-form-label">Target Services Required from Luis Chang*</label>
+            <div class="checkbox-grid">
+              <label class="checkbox-label-item">
+                <input type="checkbox" name="services[]" value="Brand Strategy" />
+                <span>Brand Strategy</span>
+              </label>
+              <label class="checkbox-label-item">
+                <input type="checkbox" name="services[]" value="Creative Direction" />
+                <span>Creative Direction</span>
+              </label>
+              <label class="checkbox-label-item">
+                <input type="checkbox" name="services[]" value="Content & UGC" />
+                <span>Content &amp; UGC</span>
+              </label>
+              <label class="checkbox-label-item">
+                <input type="checkbox" name="services[]" value="Consulting & Coaching" />
+                <span>Consulting &amp; Coaching</span>
+              </label>
+              <label class="checkbox-label-item">
+                <input type="checkbox" name="services[]" value="Event / Experiential Activation" />
+                <span>Event / Experiential Activation</span>
+              </label>
+              <label class="checkbox-label-item">
+                <input type="checkbox" name="services[]" value="Other Custom Project" />
+                <span>Other Custom Project</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="app-form-group">
+            <label class="app-form-label">Describe Your Project / Goal*</label>
+            <textarea name="project_description" rows="4" required class="app-form-textarea" placeholder="Detail the objectives, scope of work, deliverables, and why Luis Chang is the ideal match..."></textarea>
+          </div>
+
+          <!-- Section C: Budget & Timeline -->
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-forest); font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 2rem 0 1.2rem; border-bottom: 2px solid var(--color-burnt-orange); padding-bottom: 0.4rem;">
+            3. Budget &amp; Desired Timeline
+          </h4>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div class="app-form-group">
+              <label class="app-form-label">Proposed Budget Bracket*</label>
+              <select name="budget_range" required class="app-form-select">
+                <option value="" disabled selected>-- Select Budget --</option>
+                <option value="Under $1,500">Under $1,500</option>
+                <option value="$1,500 - $3,500">$1,500 – $3,500</option>
+                <option value="$3,500 - $7,500">$3,500 – $7,500</option>
+                <option value="$7,500 - $15,000">$7,500 – $15,000</option>
+                <option value="$15,000+">$15,000+</option>
+              </select>
+            </div>
+
+            <div class="app-form-group">
+              <label class="app-form-label">Estimated Start Timeline*</label>
+              <select name="timeline" required class="app-form-select">
+                <option value="" disabled selected>-- Select Timeline --</option>
+                <option value="Immediately (Within 2 weeks)">Immediately (Within 2 weeks)</option>
+                <option value="1 - 2 Months">1 – 2 Months</option>
+                <option value="Quarterly / Flexible">Quarterly / Flexible</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Section D: Consent & Submit -->
+          <div class="app-form-group" style="margin-top: 1.5rem;">
+            <label class="app-form-checkbox-label">
+              <input type="checkbox" name="consent" required />
+              <span>I confirm that all provided details are accurate and authorize Gorgeous Growth to introduce me to Luis Chang and coordinate project onboarding.*</span>
+            </label>
+          </div>
+
+          <div style="text-align: center; margin-top: 2.5rem;">
+            <button type="submit" id="submit-match-btn" class="canva-btn-white-box" style="background: var(--color-burnt-orange); color: var(--color-cream); font-size: 1.25rem; padding: 1.1rem 3.5rem; cursor: pointer; border: 2px solid var(--color-gold);">
+              Submit Match Request &rarr;
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Master Site Footer -->
+  <footer class="site-footer" style="background-color: #000000; color: #fff6ea; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-heading" style="color: #fff6ea;">Gorgeous Growth.</h3>
+        <p class="footer-desc">
+          Rooted in Chicago. Scaling Nationwide. An intentional ecosystem connecting ethical businesses, founders, and creators.
+        </p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/gorgeousgrowth" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com/@gorgeous.growth" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://linkedin.com/company/gorgeous-growth" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Pages</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../consulting.html">Knowledge</a></li>
+          <li><a href="../network.html">Network</a></li>
+          <li><a href="../growth-shop.html">Toolkits</a></li>
+          <li><a href="../careers.html">Careers</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Legal &amp; Support</h4>
+        <ul class="footer-links">
+          <li><a href="../about.html#legal-terms">Terms of Service</a></li>
+          <li><a href="../about.html#legal-terms">Privacy Policy</a></li>
+          <li><a href="../contact.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Connect</h4>
+        <p style="font-size: 0.95rem; opacity: 0.85; margin-bottom: 1rem;">
+          Chicago, IL<br />
+          hellogorgeousgrowth@gmail.com
+        </p>
+        <a href="https://calendar.app.google/rdFCmriXUaf3CKB97" target="_blank" rel="noopener noreferrer" class="btn-primary-small">Book Call</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>&copy; 2026 Gorgeous Growth Group LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/matchmaking.js"></script>
+</body>
+</html>
